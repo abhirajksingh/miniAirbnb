@@ -132,6 +132,7 @@
           ></p>
           <p class="card-text"><%=review.comment%></p>
         </div>
+        <% if(currUser && listing.owner._id.equals(currUser._id)) {%>
         <form
           class="mt-2 mb-2"
           action="/listings/<%=listing._id%>/reviews/<%=review._id%>?_method=DELETE"
@@ -139,6 +140,7 @@
         >
           <button class="btn btn-sm btn-dark">Delete</button>
         </form>
+        <% } %>
       </div>
       <%} %>
     </div>
