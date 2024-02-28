@@ -1,0 +1,87 @@
+<% layout("layouts/boilerplate") %>
+<div class="row">
+  <div class="col-8 offset-2">
+    <div class="header">
+      <h3>Create a New Listing</h3>
+      <a href="/listings" class="back-btn">Back</a>
+    </div>
+    <form
+      action="/listings"
+      method="post"
+      class="mb-3 needs-validation"
+      enctype="multipart/form-data"
+      novalidate
+    >
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input
+          class="form-control"
+          type="text"
+          name="listing[title]"
+          placeholder="Add a catchy title"
+          required
+        />
+        <div class="valid-feedback">Title Looks Good!</div>
+        <div class="invalid-feedback">Title Should be Valid!</div>
+      </div>
+      <div class="mb-3">
+        <label for="listing[image]" class="form-label">Upload Image</label>
+        <input
+          class="form-control"
+          type="file"
+          name="listing[image]"
+          required
+        />
+      </div>
+
+      <div class="row">
+        <div class="mb-3 col-md-4">
+          <label for="price" class="form-label">Price</label>
+          <input
+            class="form-control"
+            name="listing[price]"
+            placeholder="Enter Price"
+            required
+          />
+          <div class="invalid-feedback">Price Should be Valid!</div>
+        </div>
+        <div class="mb-3 col-md-8">
+          <label for="country" class="form-label">Country</label>
+          <input
+            name="listing[country]"
+            class="form-control"
+            type="text"
+            placeholder="India"
+            required
+          />
+          <div class="invalid-feedback">Country Name Should be Valid!</div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input
+          class="form-control"
+          type="text"
+          name="listing[location]"
+          placeholder="Patna, Bihar"
+          required
+        />
+        <div class="invalid-feedback">Location Should be Valid!</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea
+          name="listing[description]"
+          placeholder="Description"
+          rows="3"
+          class="form-control"
+          required
+        ></textarea>
+        <div class="invalid-feedback">Plsease Enter Short Description!</div>
+      </div>
+      <button class="btn edit-btn w-100">Add New</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,131 @@
+body{
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container{
+  flex: 1;
+}
+.navbar{
+  height: 5rem;
+  background-color: white;
+}
+.fa-compass{
+  color: #fe424d;
+  font-size: 2rem;
+}
+.nav-link{
+  color: #222222 !important;
+}
+
+/* footer */
+.f-info-links, .f-info-socials{
+  width: 100%;
+}
+.f-info-links{
+  padding-bottom: 1rem;
+}
+.f-info-socials{
+  padding-top: 1rem;
+}
+
+.f-info-socials i{
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
+.f-info-links a{
+  text-decoration: none;
+  color: #222222;
+}
+.f-info-links a:hover{
+  text-decoration: underline;
+}
+
+.f-info{
+  text-align: center;
+  display: flex;
+  height: 7rem;
+  background-color: #ebebeb;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* card */
+.card{
+  border: none !important;
+}
+.card-body{
+  padding: 0 !important;
+}
+.card-text p{
+  font-weight: 400 !important;
+}
+.card-img-top{
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.listing-link{
+  text-decoration: none;
+  color: black;
+  margin-bottom: 0.5rem;
+
+}
+/* card effect */
+
+.card-img-overlay{
+  opacity: 0;
+  margin: 0px;
+  padding: 0px;
+  transition: all 0.4s;
+}
+.card-img-overlay:hover{
+  opacity: 0.2;
+  background-color: white;
+}
+
+.edit-btn{
+  background-color: #fe424d !important;
+  color: white !important;
+}
+/* header */
+.header{
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-width: 1.5px;
+  border-bottom-color: gray;
+  border-bottom-style: solid;
+  margin-bottom: 10px;
+}
+.header a{
+  text-decoration: none;
+  color: green;
+}
+
+/* show page */
+.show-img{
+  height: 30vh;
+}
+
+.span{
+  display: block;
+}
+/* review-card */
+.review-card{
+  border : 1px solid gray !important;
+  padding: 10px 5px 5px 0px;
+}
+
+/* maps */
+#map{
+  height: 400px;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
